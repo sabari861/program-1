@@ -17,3 +17,12 @@ CREATE TABLE Student(
 -- Add PhoneNumber
 
 -- Display structure
+Alter Student table
+ALTER TABLE Student
+ADD (
+    Email VARCHAR2(30) UNIQUE,
+    PhoneNumber NUMBER(10) UNIQUE
+);
+
+-- Display modified table structure
+DESC Student;
